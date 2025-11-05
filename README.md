@@ -3,11 +3,13 @@
 ## 1. Téléchargement et extraction
 - Télécharge [Visual Studio Community 2022](https://visualstudio.microsoft.com/fr/vs/)
 - Télécharge le dépôt au format ZIP depuis [GhostPack/Certify](https://github.com/GhostPack/Certify) et extrais-le dans un répertoire de ton choix.
+- Télécharge [nuget](https://www.nuget.org/downloads)
 
 
 ## 2. Préparation de l’environnement
 
 - Place toi dans le répertoire `Certify-main\Certify-main\`
+- Copie `nuget.exe` dans ce répertoire
 - Clique droit sur le fichier `Certify.sln` et ouvre le avec **Visual Studio Community 2022**
 - Ouvre un terminal en cliquant en haut sur la barre de navigation Affichage -> Terminal
 
@@ -18,8 +20,13 @@
 ```powershell
 dotnet restore Certify.sln
 ```
-
 Cette commande télécharge automatiquement toutes les dépendances nécessaires.
+
+- Installe tous les packages nuget
+
+```powershell
+./nuget.exe restore Certify.sln
+```
 
 
 ## 4. Compilation du projet
