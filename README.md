@@ -12,18 +12,22 @@ Compilation de Certify v2
 3. Restauration des dépendances
 
 - Restaure les packages NuGet via la CLI .NET :
+
 ```dotnet restore Certify.sln```
+
 Cette commande télécharge automatiquement toutes les dépendances nécessaires.
 
 4. Compilation du projet
 
 - Compile le projet en mode Release pour toutes les plateformes :
+  
 ```msbuild Certify.sln /p:Configuration=Release /p:Platform="Any CPU"```
 
 
 5. Récupération de l’exécutable
 
 - Une fois la compilation terminée, l’exécutable Certify.exe sera disponible dans :
+  
 ```Certify-main\Certify-main\Certify\bin\Release\```
 
 
